@@ -17,7 +17,7 @@ const posts: BlogPost[] = [
     author: 'HEFTYSAMMICH',
     date: 'NOV 1, 2025',
     tag: 'HEDERA',
-    excerpt: 'The Hedera Network is home to some of the most innovative and successful NFT collections in the blockchain space. From groundbreaking artwork to communities that',
+    excerpt: 'Two months ago, Silent Architect—founder of Starfall V—reached out with an exciting proposal: partner up for the Hedera Hackathon to build an infinite runner game from scratch. We agreed on a 50/50 split for any prize winnings and dove right in.',
     slug: 'slime-starfall-v',
     logo: '/images/projects/Starfall.jpg'
   },
