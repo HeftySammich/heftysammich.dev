@@ -59,7 +59,7 @@ export function DonatePage(): string {
         </div>
 
         <!-- Back to Home -->
-        <div class="mt-8 text-center">
+        <div class="mt-8">
           <a href="/"
              class="glass-button inline-block px-6 py-3 rounded-lg font-medium">
             ← BACK TO HOME
