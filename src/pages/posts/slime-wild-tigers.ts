@@ -1,12 +1,9 @@
-import { Header } from '../../components/Header';
 import { Footer } from '../../components/Footer';
 
 export function WildTigersPost(): string {
   return `
     <div class="min-h-screen py-12 px-4">
       <div class="max-w-4xl mx-auto">
-
-        ${Header()}
 
         <article class="max-w-3xl mx-auto">
           

@@ -1,12 +1,9 @@
-import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 
 export function DonatePage(): string {
   return `
     <div class="min-h-screen py-12 px-4">
       <div class="max-w-2xl mx-auto">
-
-        ${Header()}
 
         <div class="mt-12 text-center">
           <h1 class="text-4xl md:text-5xl font-bold mb-12 text-glow">DONATE</h1>

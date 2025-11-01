@@ -1,4 +1,3 @@
-import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 
 interface BlogPost {
@@ -90,14 +89,20 @@ export function BlogPage(): string {
     <div class="min-h-screen py-12 px-4">
       <div class="max-w-4xl mx-auto">
 
-        ${Header()}
-
         <div class="text-center mb-16 mt-8">
           <h1 class="text-5xl md:text-6xl font-bold mb-4 text-glow">DEVELOPER LOG</h1>
         </div>
 
         <div class="max-w-3xl mx-auto">
           ${posts.map(post => BlogPostCard(post)).join('')}
+        </div>
+
+        <!-- Back to Home -->
+        <div class="mt-8 max-w-3xl mx-auto">
+          <a href="/"
+             class="glass-button inline-block px-6 py-3 rounded-lg font-medium">
+            ← BACK TO HOME
+          </a>
         </div>
 
         ${Footer()}
