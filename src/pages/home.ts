@@ -14,7 +14,7 @@ const links: Link[] = [
   { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME Discord Server', url: 'https://discord.gg/Gus2phUUfP' },
   { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME Tools', url: 'https://builtbyslime.app' },
   { emojiImage: '/images/emojis/splatemoji.png', label: 'Developer Log', url: '/blog.html' },
-  { emojiImage: '/images/emojis/splatemoji.png', label: 'DONATE', url: '/donate.html' },
+  { emojiImage: '/images/emojis/splatemoji.png', label: 'Donate', url: '/donate.html' },
 ];
 
 function LinkCard(link: Link): string {
@@ -56,7 +56,7 @@ export function HomePage(): string {
         <!-- Bio Section -->
         <div class="text-center mb-10 mt-12">
           <img src="/images/profile/heftysammichdevpfp.png" alt="Dave's Profile Picture" class="mx-auto mb-6 rounded-full profile-glow" style="width: 150px; height: 150px; object-fit: cover;" />
-          <h1 class="text-4xl md:text-5xl font-bold mb-6 text-glow">HeftySammich</h1>
+          <h1 class="text-4xl md:text-5xl font-bold mb-6 text-glow">HEFTYSAMMICH</h1>
           <p class="text-lg md:text-xl max-w-xl mx-auto leading-relaxed" style="color: #d1d5db">
             FOSS Developer | Building on Hedera | Founder and CTO of
             <span class="text-glow" style="color: #00ff40; font-weight: 600;">SLIME</span>
