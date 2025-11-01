@@ -34,7 +34,7 @@ const posts: BlogPost[] = [
     author: 'HEFTYSAMMICH',
     date: 'AUG 15, 2025',
     tag: 'HEDERA',
-    excerpt: "Hey SLIME fam and Hedera builders! Big news: the Overlayz dApp MVP is officially LIVE! If you're a SLIME holder, you can jump in right",
+    excerpt: 'Mauii - core builder behind Wild Tigers - was one of my first friends in the Hedera community. After months of vibing in the Wild Tigers Discord, he opened up about Wild Tigers World, the central dApp hub for the ecosystem.',
     slug: 'slime-wild-tigers',
     logo: '/images/projects/Wild. Tigers.jpg'
   }

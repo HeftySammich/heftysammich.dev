@@ -33,26 +33,51 @@ export function WildTigersPost(): string {
           <div class="glass-card p-8 md:p-12">
             <div class="prose prose-invert prose-lg max-w-none" style="color: #d1d5db">
               
-              <!-- PASTE YOUR BLOG POST CONTENT HERE -->
-              <p>
-                Hey SLIME fam and Hedera builders! Big news: the Overlayz dApp MVP is officially LIVE! If you're a SLIME holder, 
-                you can jump in right now and start exploring what we've built.
+              <p style="margin-bottom: 1.5rem;">
+                <strong>Date:</strong> August 2025<br>
+                <strong>Project:</strong> Wild Tigers World<br>
+                <strong>Partners:</strong> Mauii (Founder) & HeftySammich (Lead Developer)
               </p>
 
-              <p>
-                [Add your full blog post content here - you can use HTML tags like &lt;p&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;ul&gt;, &lt;li&gt;, &lt;strong&gt;, &lt;em&gt;, etc.]
+              <p style="margin-bottom: 1.5rem;">
+                Mauii - core builder behind Wild Tigers - was one of my first friends in the Hedera community. After months of vibing in the Wild Tigers Discord, he opened up about Wild Tigers World, the central dApp hub for the ecosystem: custom user profiles, SentX marketplace integration, Wallet Connect, and a custom PAWS token marketplace—all wrapped in a sharp React frontend.
               </p>
 
-              <!-- Example formatting:
-              <h2>Section Title</h2>
-              <p>Paragraph text...</p>
-              
-              <h3>Subsection</h3>
-              <ul>
-                <li>List item 1</li>
-                <li>List item 2</li>
-              </ul>
-              -->
+              <p style="margin-bottom: 1.5rem;">
+                He'd coded the whole thing solo on Replit. It worked… but barely.<br>
+                Slow loads, wallet connect timeouts, API rate-limit crashes, UI glitches. Launch was stalled. He hired me to get it production-ready and bulletproof.
+              </p>
+
+              <p style="margin-bottom: 1.5rem;">
+                <strong>Mission accomplished:</strong><br>
+                Migrated from Replit → Git → clean CI/CD pipeline<br>
+                Deployed live on Railway with auto-scaling and edge caching<br>
+                Upgraded from single mirror node → cycling mirror node cluster (rate-limit proof)<br>
+                Integrated full Hedera SDK, SentX API, and Wallet Connect v2 with fallback logic
+              </p>
+
+              <p style="margin-bottom: 1.5rem;">
+                Optimized data queries: batched HCS calls, indexed PAWS balances, lazy-loaded profiles<br>
+                Fixed UI bugs (mobile overflow, modal z-index, dark mode flicker)<br>
+                Added enterprise-grade logging, error tracking, and uptime monitoring
+              </p>
+
+              <p style="margin-bottom: 1.5rem;">
+                Result? Wild Tigers World now loads in &lt;1.2s globally, handles 100+ concurrent wallet connections without choking, and runs like a Tier-1 dApp—on a community budget.
+              </p>
+
+              <p style="margin-bottom: 1.5rem;">
+                This is now the official base of operations for the Wild Tigers ecosystem - PAWS trading, NFT browsing, profile staking, and community quests - all in one place.
+              </p>
+
+              <p style="margin-bottom: 1.5rem;">
+                <strong>Future with Mauii:</strong><br>
+                Ongoing partnership. New features dropping quarterly: leaderboards, staking v2, cross-game PAWS utility, and mobile PWA support.
+              </p>
+
+              <p style="margin-bottom: 1.5rem;">
+                From Replit chaos to Hedera-grade polish—SLIME strikes again.
+              </p>
 
             </div>
           </div>
