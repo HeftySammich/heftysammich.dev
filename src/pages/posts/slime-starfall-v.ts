@@ -38,7 +38,7 @@ export function StarfallVPost(): string {
 
               <p style="margin-bottom: 1.5rem;">
                 <strong>Date:</strong> October 2025<br>
-                <strong>Project Type:</strong> Hedera Hackathon Entry (Gaming & NFT Track)<br>
+                <strong>Project Type:</strong> Skaterz<br>
                 <strong>Partners:</strong> Silent Architect (Lead Dev) & HeftySammich (DevOps & Hedera Integration)
               </p>
 
