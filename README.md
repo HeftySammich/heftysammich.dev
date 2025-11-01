@@ -30,10 +30,6 @@ heftysammich.dev/
 - **Home** (`/`) - Link tree with bio and social links
 - **Dev Log** (`/blog.html`) - Developer log and posts
 - **Donate** (`/donate.html`) - Support options (crypto & fiat)
-
-```
-
-## 🙏 Credits
+  
 
 Built by SLIME with 💚
-
