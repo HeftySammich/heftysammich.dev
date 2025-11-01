@@ -35,28 +35,32 @@ export function StarfallVPost(): string {
           <!-- Post Content -->
           <div class="glass-card p-8 md:p-12">
             <div class="prose prose-invert prose-lg max-w-none" style="color: #d1d5db">
-              
-              <!-- PASTE YOUR BLOG POST CONTENT HERE -->
-              <p>
-                The Hedera Network is home to some of the most innovative and successful NFT collections in the blockchain space. 
-                From groundbreaking artwork to communities that redefine digital ownership, Hedera has proven to be a fertile ground 
-                for creativity and innovation.
+
+              <p style="margin-bottom: 1.5rem;">
+                <strong>Date:</strong> October 2025<br>
+                <strong>Project Type:</strong> Hedera Hackathon Entry (Gaming & NFT Track)<br>
+                <strong>Partners:</strong> Silent Architect (Lead Dev) & HeftySammich (DevOps & Hedera Integration)
               </p>
 
-              <p>
-                [Add your full blog post content here - you can use HTML tags like &lt;p&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;ul&gt;, &lt;li&gt;, &lt;strong&gt;, &lt;em&gt;, etc.]
+              <p style="margin-bottom: 1.5rem;">
+                Two months ago, Silent Architect—founder of Starfall V—reached out with an exciting proposal: partner up for the Hedera Hackathon to build an infinite runner game from scratch. We agreed on a 50/50 split for any prize winnings and dove right in.
               </p>
 
-              <!-- Example formatting:
-              <h2>Section Title</h2>
-              <p>Paragraph text...</p>
-              
-              <h3>Subsection</h3>
-              <ul>
-                <li>List item 1</li>
-                <li>List item 2</li>
-              </ul>
-              -->
+              <p style="margin-bottom: 1.5rem;">
+                Silent took the reins as lead developer, crafting the core gameplay mechanics, UI, custom sprites, and the primary codebase. I handled DevOps duties—including repo management, server setup on Railway (keeping costs under $5/mo), and all Hedera integrations like wallet connectivity, token association flows, NFT-based character unlocking, and treasury-driven reward distribution.
+              </p>
+
+              <p style="margin-bottom: 1.5rem;">
+                The result? A polished, ad-free play-to-earn mobile game blending infinite runner action with platformer elements, boss battles, and reward challenges. Players collect STAR tokens (Starfall V's protocol token) in-game and can claim them directly to a connected Hedera wallet. Unlockable characters come via NFTs or by spending earned STAR—adding real ownership and utility.
+              </p>
+
+              <p style="margin-bottom: 1.5rem;">
+                We submitted on time and crushed it. Post-hackathon (once winners are announced), we'll iterate with new levels, mechanics, and features.
+              </p>
+
+              <p style="margin-bottom: 1.5rem;">
+                <strong>Long-term goal:</strong> use the game as an onboarding powerhouse to bring 500 new users into the Hedera ecosystem by end of 2027.
+              </p>
 
             </div>
           </div>
