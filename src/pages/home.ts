@@ -14,7 +14,7 @@ const links: Link[] = [
   { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME Discord Server', url: 'https://discord.gg/Gus2phUUfP' },
   { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME Tools', url: 'https://builtbyslime.app' },
   { emojiImage: '/images/emojis/splatemoji.png', label: 'Developer Log', url: '/blog.html' },
-  { emojiImage: '/images/emojis/splatemoji.png', label: 'Donate', url: '/donate.html' },
+  { emojiImage: '/images/emojis/splatemoji.png', label: 'DONATE', url: '/donate.html' },
 ];
 
 function LinkCard(link: Link): string {

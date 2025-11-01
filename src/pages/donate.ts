@@ -9,7 +9,7 @@ export function DonatePage(): string {
         ${Header()}
 
         <div class="mt-12 text-center">
-          <h1 class="text-4xl md:text-5xl font-bold mb-12 text-glow">Donate</h1>
+          <h1 class="text-4xl md:text-5xl font-bold mb-12 text-glow">DONATE</h1>
 
           <div class="max-w-3xl mx-auto">
 
