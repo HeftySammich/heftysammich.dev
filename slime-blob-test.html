@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slime Blob Background Test</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background-color: #222222;
+      color: white;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Animated Gradient Blob Background */
+    .blob-container {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 0;
+      opacity: 0.15; /* Subtle overlay */
+    }
+
+    /* Main central blob - stretches and pulls like slime */
+    .blob-main {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 900px;
+      height: 900px;
+      transform: translate(-50%, -50%);
+      border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+      filter: blur(80px);
+      background: radial-gradient(circle at 50% 50%, #00ff40, #00cc33 35%, #00aa2a 60%, #008822 85%);
+      animation: stretchPull 30s ease-in-out infinite;
+    }
+
+    /* Main blob stretching and pulling animation - more fluid and elastic */
+    @keyframes stretchPull {
+      0%, 100% {
+        border-radius: 42% 58% 65% 35% / 48% 52% 48% 52%;
+        transform: translate(-50%, -50%) scale(1, 1);
+      }
+
+      12% {
+        border-radius: 65% 35% 48% 52% / 42% 58% 35% 65%;
+        transform: translate(-48%, -52%) scale(1.15, 0.92);
+      }
+
+      25% {
+        border-radius: 35% 65% 52% 48% / 58% 42% 65% 35%;
+        transform: translate(-52%, -50%) scale(0.88, 1.18);
+      }
+
+      37% {
+        border-radius: 52% 48% 42% 58% / 65% 35% 52% 48%;
+        transform: translate(-50%, -48%) scale(1.08, 0.95);
+      }
+
+      50% {
+        border-radius: 48% 52% 58% 42% / 35% 65% 48% 52%;
+        transform: translate(-48%, -50%) scale(0.92, 1.12);
+      }
+
+      62% {
+        border-radius: 58% 42% 35% 65% / 52% 48% 42% 58%;
+        transform: translate(-50%, -52%) scale(1.12, 0.90);
+      }
+
+      75% {
+        border-radius: 42% 58% 48% 52% / 48% 52% 58% 42%;
+        transform: translate(-52%, -48%) scale(0.90, 1.15);
+      }
+
+      87% {
+        border-radius: 65% 35% 42% 58% / 42% 58% 35% 65%;
+        transform: translate(-48%, -50%) scale(1.10, 0.93);
+      }
+    }
+
+    /* Content Layer */
+    .content {
+      position: relative;
+      z-index: 1;
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .test-section {
+      background: rgba(34, 34, 34, 0.8);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(0, 255, 64, 0.2);
+      border-radius: 12px;
+      padding: 40px;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #00ff40;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #00ff40;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+      color: #d1d5db;
+    }
+
+    .controls {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .control-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    label {
+      font-size: 0.9rem;
+      color: #9ca3af;
+    }
+
+    input[type="range"] {
+      width: 200px;
+      accent-color: #00ff40;
+    }
+
+    input[type="number"] {
+      width: 80px;
+      padding: 8px;
+      background: rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(0, 255, 64, 0.3);
+      border-radius: 6px;
+      color: white;
+    }
+
+    button {
+      padding: 12px 24px;
+      background: rgba(0, 255, 64, 0.1);
+      border: 1px solid rgba(0, 255, 64, 0.3);
+      border-radius: 8px;
+      color: #00ff40;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background: rgba(0, 255, 64, 0.2);
+      border-color: #00ff40;
+    }
+
+    .value-display {
+      display: inline-block;
+      min-width: 50px;
+      color: #00ff40;
+      font-weight: bold;
+    }
+
+    code {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: #00ff40;
+      font-family: 'Courier New', monospace;
+    }
+  </style>
+</head>
+<body>
+  <!-- Animated Blob Background -->
+  <div class="blob-container" id="blobContainer">
+    <div class="blob-main"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+    <div class="test-section">
+      <h1>🟢 SLIME Blob Background Test</h1>
+      <p>This is a test page for the animated gradient blob background using your primary color <code>#00ff40</code>.</p>
+      <p>The blobs are subtle, morphing shapes that create a dynamic but not overwhelming background effect.</p>
+    </div>
+
+    <div class="test-section">
+      <h2>Interactive Controls</h2>
+      <p>Adjust the settings below to see how different values affect the blob animation:</p>
+      
+      <div class="controls">
+        <div class="control-group">
+          <label>Opacity: <span class="value-display" id="opacityValue">0.15</span></label>
+          <input type="range" id="opacitySlider" min="0" max="100" value="15" step="1">
+        </div>
+
+        <div class="control-group">
+          <label>Blur Amount: <span class="value-display" id="blurValue">80px</span></label>
+          <input type="range" id="blurSlider" min="0" max="150" value="80" step="5">
+        </div>
+
+        <div class="control-group">
+          <label>Animation Speed (seconds): <span class="value-display" id="speedValue">30</span></label>
+          <input type="range" id="speedSlider" min="10" max="60" value="30" step="5">
+        </div>
+      </div>
+
+      <div style="margin-top: 30px;">
+        <button onclick="resetDefaults()">Reset to Defaults</button>
+        <button onclick="toggleAnimation()">Pause/Play Animation</button>
+      </div>
+    </div>
+
+    <div class="test-section">
+      <h2>Sample Content</h2>
+      <p>This section shows how content looks with the blob background. The glass-card effect with the subtle green border complements the animated background nicely.</p>
+      <p>The blobs are set to a low opacity (15% by default) so they don't overpower the content, but still add visual interest and movement.</p>
+      <p>The blur effect creates that "slimey" organic feel while keeping it professional and modern.</p>
+    </div>
+
+    <div class="test-section">
+      <h2>Different Variations to Try</h2>
+      <ul style="list-style: none; padding: 0;">
+        <li style="margin-bottom: 10px;">✅ <strong>Subtle (current):</strong> Low opacity (10-20%), high blur (60-80px)</li>
+        <li style="margin-bottom: 10px;">✅ <strong>Medium:</strong> Medium opacity (25-35%), medium blur (40-60px)</li>
+        <li style="margin-bottom: 10px;">✅ <strong>Bold:</strong> Higher opacity (40-50%), lower blur (20-40px)</li>
+        <li style="margin-bottom: 10px;">✅ <strong>Minimal:</strong> Very low opacity (5-10%), very high blur (100-150px)</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    const blobContainer = document.getElementById('blobContainer');
+    const blobMain = document.querySelector('.blob-main');
+    const opacitySlider = document.getElementById('opacitySlider');
+    const blurSlider = document.getElementById('blurSlider');
+    const speedSlider = document.getElementById('speedSlider');
+    const opacityValue = document.getElementById('opacityValue');
+    const blurValue = document.getElementById('blurValue');
+    const speedValue = document.getElementById('speedValue');
+
+    let animationPaused = false;
+
+    // Update opacity
+    opacitySlider.addEventListener('input', (e) => {
+      const value = e.target.value / 100;
+      blobContainer.style.opacity = value;
+      opacityValue.textContent = value.toFixed(2);
+    });
+
+    // Update blur
+    blurSlider.addEventListener('input', (e) => {
+      const value = e.target.value;
+      blobMain.style.filter = `blur(${value}px)`;
+      blurValue.textContent = `${value}px`;
+    });
+
+    // Update animation speed
+    speedSlider.addEventListener('input', (e) => {
+      const value = e.target.value;
+      blobMain.style.animationDuration = `${value}s`;
+      speedValue.textContent = value;
+    });
+
+    // Reset to defaults
+    function resetDefaults() {
+      opacitySlider.value = 15;
+      blurSlider.value = 80;
+      speedSlider.value = 30;
+
+      blobContainer.style.opacity = 0.15;
+      opacityValue.textContent = '0.15';
+
+      blobMain.style.filter = 'blur(80px)';
+      blurValue.textContent = '80px';
+
+      blobMain.style.animationDuration = '30s';
+      speedValue.textContent = '30';
+    }
+
+    // Toggle animation
+    function toggleAnimation() {
+      animationPaused = !animationPaused;
+      blobMain.style.animationPlayState = animationPaused ? 'paused' : 'running';
+    }
+  </script>
+</body>
+</html>
+
