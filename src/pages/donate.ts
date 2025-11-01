@@ -58,6 +58,14 @@ export function DonatePage(): string {
           </p>
         </div>
 
+        <!-- Back to Home -->
+        <div class="mt-8 text-center">
+          <a href="/"
+             class="glass-button inline-block px-6 py-3 rounded-lg font-medium">
+            ← BACK TO HOME
+          </a>
+        </div>
+
         ${Footer()}
 
       </div>
