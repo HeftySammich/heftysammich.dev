@@ -93,7 +93,7 @@ export function BlogPage(): string {
         ${Header()}
 
         <div class="text-center mb-16 mt-8">
-          <h1 class="text-5xl md:text-6xl font-bold mb-4 text-glow">DEV LOG</h1>
+          <h1 class="text-5xl md:text-6xl font-bold mb-4 text-glow">DEVELOPER LOG</h1>
         </div>
 
         <div class="max-w-3xl mx-auto">
