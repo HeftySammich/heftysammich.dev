@@ -7,12 +7,13 @@ interface Link {
   label: string;
   url: string;
   highlight?: boolean;
+  disabled?: boolean;
 }
 
 const links: Link[] = [
-  { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME Website', url: 'https://builtbyslime.org' },
+  { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME Website (coming soon)', url: '#', disabled: true },
   { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME Discord Server', url: 'https://discord.gg/Gus2phUUfP' },
-  { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME Tools', url: 'https://builtbyslime.app' },
+  { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME Tools (coming soon)', url: '#', disabled: true },
   { emojiImage: '/images/emojis/splatemoji.png', label: 'Developer Log', url: '/blog.html' },
   { emojiImage: '/images/emojis/splatemoji.png', label: 'Donate', url: '/donate.html' },
 ];
@@ -22,16 +23,36 @@ function LinkCard(link: Link): string {
     ? 'link-card'
     : 'link-card';
 
-  const cardStyle = link.highlight
+  let cardStyle = link.highlight
     ? 'background: rgba(0, 255, 64, 0.2); border-color: rgba(0, 255, 64, 0.8); box-shadow: 0 0 50px rgba(0, 255, 64, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.15);'
     : '';
 
-  const textColor = link.highlight ? '#00ff40' : 'white';
+  // Add disabled styling
+  if (link.disabled) {
+    cardStyle += ' opacity: 0.5; cursor: not-allowed;';
+  }
+
+  const textColor = link.highlight ? '#00ff40' : (link.disabled ? '#9ca3af' : 'white');
   const arrowColor = link.highlight ? '#00ff40' : '#9ca3af';
 
   const emojiContent = link.emojiImage
-    ? `<img src="${link.emojiImage}" alt="" class="inline-block" style="width: 22px; height: 22px; margin-right: 8px; vertical-align: middle;" />`
+    ? `<img src="${link.emojiImage}" alt="" class="inline-block" style="width: 22px; height: 22px; margin-right: 8px; vertical-align: middle; ${link.disabled ? 'opacity: 0.5;' : ''}" />`
     : link.emoji || '';
+
+  // If disabled, use a div instead of an anchor
+  if (link.disabled) {
+    return `
+      <div class="${cardClass}"
+           style="${cardStyle}">
+        <div class="flex items-center justify-between">
+          <span class="font-medium text-lg flex items-center" style="color: ${textColor}">
+            ${emojiContent}${link.label}
+          </span>
+          <span style="color: ${arrowColor}">→</span>
+        </div>
+      </div>
+    `;
+  }
 
   return `
     <a href="${link.url}"
