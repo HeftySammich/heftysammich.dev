@@ -26,7 +26,7 @@ const posts: BlogPost[] = [
     author: 'HEFTYSAMMICH',
     date: 'OCT 1, 2025',
     tag: 'HEDERA',
-    excerpt: 'Search Engine Optimization (SEO) is the backbone of online visibility. Whether you\'re running a personal blog, an e-commerce store, or a corporate website',
+    excerpt: 'NoGrave, founder of ħBUDS, had already launched ScribbleXRB - a sleek, minimal note-taking app live on iOS and Android with a growing user base. After diving into the Hedera ecosystem, he saw the perfect upgrade: store notes immutably on the Hedera File Service (HFS).',
     slug: 'slime-hbuds',
     logo: '/images/projects/buds.jpg'
   },
