@@ -21,7 +21,7 @@ export function StarfallVPost(): string {
                 <div class="flex flex-wrap gap-4 text-sm" style="color: #9ca3af">
                   <span style="color: white; font-medium">HEFTYSAMMICH</span>
                   <span>•</span>
-                  <span style="color: white; font-medium">NOV 1, 2025</span>
+                  <span style="color: white; font-medium">OCT 31, 2025</span>
                   <span>•</span>
                   <span class="text-glow" style="color: #00ff40; font-weight: 600;">HEDERA</span>
                 </div>

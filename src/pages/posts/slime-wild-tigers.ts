@@ -21,7 +21,7 @@ export function WildTigersPost(): string {
                 <div class="flex flex-wrap gap-4 text-sm" style="color: #9ca3af">
                   <span style="color: white; font-medium">HEFTYSAMMICH</span>
                   <span>•</span>
-                  <span style="color: white; font-medium">AUG 15, 2025</span>
+                  <span style="color: white; font-medium">JUL 15, 2025</span>
                   <span>•</span>
                   <span class="text-glow" style="color: #00ff40; font-weight: 600;">HEDERA</span>
                 </div>
