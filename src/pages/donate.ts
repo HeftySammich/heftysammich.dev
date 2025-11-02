@@ -2,7 +2,7 @@ import { Footer } from '../components/Footer';
 
 export function DonatePage(): string {
   return `
-    <div class="min-h-screen py-12 px-4">
+    <div class="min-h-screen pb-12 px-4">
       <div class="max-w-2xl mx-auto">
 
         <div class="mt-12 text-center">

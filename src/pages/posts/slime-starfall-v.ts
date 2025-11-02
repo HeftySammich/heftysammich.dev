@@ -64,7 +64,7 @@ export function StarfallVPost(): string {
 
           <!-- Back to Dev Log -->
           <div class="mt-8">
-            <a href="/blog.html" 
+            <a href="/dev-log"
                class="glass-button inline-block px-6 py-3 rounded-lg font-medium">
               ← BACK TO DEV LOG
             </a>

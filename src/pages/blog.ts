@@ -56,7 +56,7 @@ function BlogPostCard(post: BlogPost): string {
         <!-- Content -->
         <div class="flex-1">
           <h2 class="text-3xl md:text-4xl font-bold mb-4 hover:opacity-80 transition-opacity" style="font-family: system-ui, -apple-system, sans-serif;">
-            <a href="/${post.slug}.html" style="color: white">
+            <a href="/${post.slug}" style="color: white">
               ${post.title}
             </a>
           </h2>
@@ -73,7 +73,7 @@ function BlogPostCard(post: BlogPost): string {
             ${post.excerpt}
           </p>
 
-          <a href="/${post.slug}.html"
+          <a href="/${post.slug}"
              class="glass-button inline-block px-6 py-3 rounded-lg font-medium">
             READ MORE
           </a>
@@ -86,7 +86,7 @@ function BlogPostCard(post: BlogPost): string {
 
 export function BlogPage(): string {
   return `
-    <div class="min-h-screen py-12 px-4">
+    <div class="min-h-screen pb-12 px-4">
       <div class="max-w-4xl mx-auto">
 
         <div class="text-center mb-16 mt-8">
@@ -104,7 +104,7 @@ export function BlogPage(): string {
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
             </svg>
-            Back to home
+            HOME
           </a>
         </div>
 

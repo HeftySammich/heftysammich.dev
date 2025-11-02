@@ -6,7 +6,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        blog: resolve(__dirname, 'blog.html'),
+        'dev-log': resolve(__dirname, 'dev-log.html'),
         donate: resolve(__dirname, 'donate.html'),
         'slime-starfall-v': resolve(__dirname, 'slime-starfall-v.html'),
         'slime-hbuds': resolve(__dirname, 'slime-hbuds.html'),
