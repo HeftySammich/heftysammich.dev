@@ -102,7 +102,7 @@ export function BlogPage(): string {
           <a href="/"
              class="inline-flex items-center gap-2 text-accent hover:text-white transition-colors duration-200 text-sm font-medium">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
             </svg>
             Back to home
           </a>
