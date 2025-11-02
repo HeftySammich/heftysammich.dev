@@ -34,9 +34,9 @@ export function WildTigersPost(): string {
             <div class="prose prose-invert prose-lg max-w-none" style="color: #d1d5db">
               
               <p style="margin-bottom: 1.5rem;">
-                <strong>Date:</strong> August 2025<br>
+                <strong>Date:</strong> July 2025<br>
                 <strong>Project:</strong> Wild Tigers World<br>
-                <strong>Partners:</strong> Mauii (Founder) & HeftySammich (Lead Developer)
+                <strong>Partners:</strong> Mauii (Wild Tigers) & HeftySammich (SLIME)
               </p>
 
               <p style="margin-bottom: 1.5rem;">

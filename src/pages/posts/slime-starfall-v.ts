@@ -40,7 +40,7 @@ export function StarfallVPost(): string {
               </p>
 
               <p style="margin-bottom: 1.5rem;">
-                Two months ago, Silent Architect—founder of Starfall V—reached out with an exciting proposal: partner up for the Hedera Hackathon to build an infinite runner game from scratch. We agreed on a 50/50 split for any prize winnings and dove right in.
+                Two months ago, Silent Architect - founder of Starfall V - reached out with an exciting proposal: partner up for the Hedera Hackathon to build an infinite runner game from scratch. We agreed on a 50/50 split for any prize winnings and dove right in.
               </p>
 
               <p style="margin-bottom: 1.5rem;">
@@ -52,7 +52,7 @@ export function StarfallVPost(): string {
               </p>
 
               <p style="margin-bottom: 1.5rem;">
-                We submitted on time and crushed it. Post-hackathon (once winners are announced), we'll iterate with new levels, mechanics, and features.
+                We submitted and crushed it. Post-hackathon (once winners are announced), we'll iterate with new levels, mechanics, and features.
               </p>
 
               <p style="margin-bottom: 1.5rem;">

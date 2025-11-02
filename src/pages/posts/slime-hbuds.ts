@@ -36,7 +36,7 @@ export function HbudsPost(): string {
               <p style="margin-bottom: 1.5rem;">
                 <strong>Date:</strong> September 2025<br>
                 <strong>Project:</strong> ScribbleXRB<br>
-                <strong>Partners:</strong> NoGrave (Founder, ħBUDS) & HeftySammich (SLIME)
+                <strong>Partners:</strong> NoGrave (ħBUDS) & HeftySammich (SLIME)
               </p>
 
               <p style="margin-bottom: 1.5rem;">
