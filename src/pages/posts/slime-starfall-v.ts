@@ -65,8 +65,11 @@ export function StarfallVPost(): string {
           <!-- Back to Dev Log -->
           <div class="mt-8">
             <a href="/dev-log"
-               class="glass-button inline-block px-6 py-3 rounded-lg font-medium">
-              ← BACK TO DEV LOG
+               class="inline-flex items-center gap-2 text-accent hover:text-white transition-colors duration-200 text-sm font-medium">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+              </svg>
+              DEV LOG
             </a>
           </div>
 
