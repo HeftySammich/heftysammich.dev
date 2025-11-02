@@ -63,7 +63,7 @@ export function WildTigersPost(): string {
               </p>
 
               <p style="margin-bottom: 1.5rem;">
-                Result? Wild Tigers World now loads in &lt;1.2s globally, handles 100+ concurrent wallet connections without choking, and runs like a Tier-1 dApp—on a community budget.
+                Result? Wild Tigers World now loads in &lt;1.2s globally, and runs like a Tier-1 dApp - on a community budget.
               </p>
 
               <p style="margin-bottom: 1.5rem;">
