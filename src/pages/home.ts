@@ -71,7 +71,7 @@ function LinkCard(link: Link): string {
 
 export function HomePage(): string {
   return `
-    <div class="min-h-screen py-12 px-4">
+    <div class="min-h-screen pb-12 px-4">
       <div class="max-w-2xl mx-auto">
 
         <!-- Bio Section -->
