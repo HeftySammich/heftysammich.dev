@@ -40,11 +40,11 @@ export function WildTigersPost(): string {
               </p>
 
               <p style="margin-bottom: 1.5rem;">
-                Mauii - core builder behind Wild Tigers - was one of my first friends in the Hedera community. After months of vibing in the Wild Tigers Discord, he opened up about Wild Tigers World, the central dApp hub for the ecosystem: custom user profiles, SentX marketplace integration, Wallet Connect, and a custom PAWS token marketplace—all wrapped in a sharp React frontend.
+                Mauii - the founder and builder behind Wild Tigers - was one of my first connections in Hedera. After months of vibing in the Wild Tigers Discord, he told me about Wild Tigers World, the central hub for their ecosystem: custom user profiles, SentX marketplace integration, Wallet Connect, and a custom PAWS token marketplace—all wrapped in a sharp React frontend.
               </p>
 
               <p style="margin-bottom: 1.5rem;">
-                He'd coded the whole thing solo on Replit. It worked… but barely.<br>
+                He'd coded the whole thing solo on Replit. It worked… but struggled with performance.<br>
                 Slow loads, wallet connect timeouts, API rate-limit crashes, UI glitches. Launch was stalled. He hired me to get it production-ready and bulletproof.
               </p>
 
