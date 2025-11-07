@@ -11,7 +11,7 @@ interface Link {
 }
 
 const links: Link[] = [
-  { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME Website (coming soon)', url: '#', disabled: true },
+  { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME Website', url: 'https://www.builtbyslime.org/' },
   { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME Discord Server', url: 'https://discord.gg/Gus2phUUfP' },
   { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME Tools (coming soon)', url: '#', disabled: true },
   { emojiImage: '/images/emojis/splatemoji.png', label: 'Developer Log', url: '/dev-log' },
