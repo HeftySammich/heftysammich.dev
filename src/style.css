@@ -63,11 +63,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Cyan border variant */
 .link-card-cyan {
-  border-color: rgba(0, 255, 255, 0.15);
+  border-color: rgba(0, 255, 255, 0.25);
 }
 
 .link-card-cyan:hover {
-  border-color: rgba(0, 255, 255, 0.4);
+  border-color: rgba(0, 255, 255, 0.5);
 }
 
 /* Profile image with subtle glow */
