@@ -22,18 +22,14 @@ const links: Link[] = [
 ];
 
 function LinkCard(link: Link): string {
-  const cardClass = link.highlight
-    ? 'link-card'
-    : 'link-card';
+  let cardClass = 'link-card';
+  if (link.cyanBorder) {
+    cardClass += ' link-card-cyan';
+  }
 
   let cardStyle = link.highlight
     ? 'background: rgba(0, 255, 64, 0.2); border-color: rgba(0, 255, 64, 0.8); box-shadow: 0 0 50px rgba(0, 255, 64, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.15);'
     : '';
-
-  // Apply cyan border if specified (matching the same 0.15 opacity as green)
-  if (link.cyanBorder) {
-    cardStyle += ' border-color: rgba(0, 255, 255, 0.15);';
-  }
 
   // Add disabled styling
   if (link.disabled) {
