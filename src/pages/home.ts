@@ -8,12 +8,15 @@ interface Link {
   url: string;
   highlight?: boolean;
   disabled?: boolean;
+  cyanBorder?: boolean;
 }
 
 const links: Link[] = [
   { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME Website', url: 'https://www.builtbyslime.org/' },
-  { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME Discord Server', url: 'https://discord.gg/Gus2phUUfP' },
   { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME Tools (coming soon)', url: '#', disabled: true },
+  { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME Discord Server', url: 'https://discord.gg/Gus2phUUfP' },
+  { emojiImage: '/images/emojis/splatemoji.png', label: 'WRAPpDEX Website', url: 'https://www.wrappdex.com/', cyanBorder: true },
+  { emojiImage: '/images/emojis/splatemoji.png', label: 'WRAPpDEX Discord Server', url: 'https://discord.com/invite/Xzcga4CzrC', cyanBorder: true },
   { emojiImage: '/images/emojis/splatemoji.png', label: 'Developer Log', url: '/dev-log' },
   { emojiImage: '/images/emojis/splatemoji.png', label: 'Donate', url: '/donate' },
 ];
@@ -26,6 +29,11 @@ function LinkCard(link: Link): string {
   let cardStyle = link.highlight
     ? 'background: rgba(0, 255, 64, 0.2); border-color: rgba(0, 255, 64, 0.8); box-shadow: 0 0 50px rgba(0, 255, 64, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.15);'
     : '';
+
+  // Apply cyan border if specified
+  if (link.cyanBorder) {
+    cardStyle += ' border-color: #00ffff;';
+  }
 
   // Add disabled styling
   if (link.disabled) {
