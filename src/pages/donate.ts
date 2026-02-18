@@ -24,7 +24,7 @@ export function DonatePage(): string {
                 <div>
                   <div class="text-base mb-2 font-medium" style="color: #9ca3af">Monero (XMR)</div>
                   <code class="text-sm p-3 rounded block break-all" style="background-color: rgba(0, 0, 0, 0.5); border: 1px solid rgba(0, 255, 64, 0.2);">
-                    88r6sT4UnwDgWYbNLGyp3W7W2boJykWovjBFZCCKSZ2scMHpnXZSQoahfiuJhjKoT6NjbGUXWs2QaB3MBxKvp8VT9L4WadD
+                    89WPR2Cpmh1XdsBCuhg2HCCAjqzbXoTo8jHvRqgQhBPs5SKL45qxcxmVwXgdGYEySBjDqQZroYoCiP98uRDb4nMySQdQ7fG
                   </code>
                 </div>
               </div>
