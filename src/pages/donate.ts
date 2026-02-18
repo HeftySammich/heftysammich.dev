@@ -22,27 +22,6 @@ export function DonatePage(): string {
                 </div>
 
                 <div>
-                  <div class="text-base mb-2 font-medium" style="color: #9ca3af">Ripple (XRP)</div>
-                  <code class="text-sm p-3 rounded block break-all" style="background-color: rgba(0, 0, 0, 0.5); border: 1px solid rgba(0, 255, 64, 0.2);">
-                    rp7LnGnzGpbSbLViUdKDaaaeJCmcwGXTJ7
-                  </code>
-                </div>
-
-                <div>
-                  <div class="text-base mb-2 font-medium" style="color: #9ca3af">Dogecoin (DOGE)</div>
-                  <code class="text-sm p-3 rounded block break-all" style="background-color: rgba(0, 0, 0, 0.5); border: 1px solid rgba(0, 255, 64, 0.2);">
-                    D7Y8cdeYpkuQKMDK42XzZVgL3mbGVFWsYX
-                  </code>
-                </div>
-
-                <div>
-                  <div class="text-base mb-2 font-medium" style="color: #9ca3af">Bitcoin (BTC)</div>
-                  <code class="text-sm p-3 rounded block break-all" style="background-color: rgba(0, 0, 0, 0.5); border: 1px solid rgba(0, 255, 64, 0.2);">
-                    bc1qghvp9astsl56cl23aqdza8jclqm4h4x689qkph
-                  </code>
-                </div>
-
-                <div>
                   <div class="text-base mb-2 font-medium" style="color: #9ca3af">Monero (XMR)</div>
                   <code class="text-sm p-3 rounded block break-all" style="background-color: rgba(0, 0, 0, 0.5); border: 1px solid rgba(0, 255, 64, 0.2);">
                     88r6sT4UnwDgWYbNLGyp3W7W2boJykWovjBFZCCKSZ2scMHpnXZSQoahfiuJhjKoT6NjbGUXWs2QaB3MBxKvp8VT9L4WadD
