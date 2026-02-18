@@ -84,8 +84,8 @@ export function HomePage(): string {
           <p class="text-lg md:text-xl max-w-xl mx-auto leading-relaxed" style="color: #d1d5db">
             FOSS Developer | Building on Hedera | Founder of
             <span class="text-glow" style="color: #00ff40; font-weight: 600;">SLIME</span>
-            | CTO of
-            <span style="color: #00ffff; font-weight: 600;">WRAPpDEX</span>
+            | Founder of
+            <span style="color: #00ffff; font-weight: 600;">Heyproxy</span>
           </p>
         </div>
 
