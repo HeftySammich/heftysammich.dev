@@ -12,6 +12,7 @@ interface Link {
 }
 
 const links: Link[] = [
+  { emojiImage: '/images/emojis/splatemoji.png', label: 'Heyproxy Website', url: 'https://www.heyproxy.io/', cyanBorder: true },
   { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME Website', url: 'https://www.builtbyslime.org/' },
   { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME Tools (coming soon)', url: '#', disabled: true },
   { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME dApp (coming soon)', url: '#', disabled: true },
@@ -82,7 +83,7 @@ export function HomePage(): string {
           <img src="/images/profile/heftysammichdevpfp.png" alt="Dave's Profile Picture" class="mx-auto mb-6 rounded-full profile-glow" style="width: 150px; height: 150px; object-fit: cover;" />
           <h1 class="text-4xl md:text-5xl font-bold mb-6 text-glow">HEFTYSAMMICH</h1>
           <p class="text-lg md:text-xl max-w-xl mx-auto leading-relaxed" style="color: #d1d5db">
-            FOSS Developer | Building on Hedera | Founder of
+            Developer | Privacy Advocate | Building on Hedera | Founder of
             <span class="text-glow" style="color: #00ff40; font-weight: 600;">SLIME</span>
             | Founder of
             <span style="color: #00ffff; font-weight: 600;">Heyproxy</span>
