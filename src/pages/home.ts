@@ -14,9 +14,8 @@ interface Link {
 const links: Link[] = [
   { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME Website', url: 'https://www.builtbyslime.org/' },
   { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME Tools (coming soon)', url: '#', disabled: true },
+  { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME dApp (coming soon)', url: '#', disabled: true },
   { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME Discord Server', url: 'https://discord.gg/Gus2phUUfP' },
-  { emojiImage: '/images/emojis/splatemoji.png', label: 'WRAPpDEX Website', url: 'https://www.wrappdex.com/', cyanBorder: true },
-  { emojiImage: '/images/emojis/splatemoji.png', label: 'WRAPpDEX Discord Server', url: 'https://discord.com/invite/Xzcga4CzrC', cyanBorder: true },
   { emojiImage: '/images/emojis/splatemoji.png', label: 'Developer Log', url: '/dev-log' },
   { emojiImage: '/images/emojis/splatemoji.png', label: 'Donate', url: '/donate' },
 ];
