@@ -80,7 +80,7 @@ export function HomePage(): string {
 
         <!-- Bio Section -->
         <div class="text-center mb-10 mt-12">
-          <img src="/images/profile/heftysammichdevpfp.png" alt="Dave's Profile Picture" class="mx-auto mb-6 rounded-full profile-glow" style="width: 150px; height: 150px; object-fit: cover;" />
+          <img src="/images/profile/IMG_5744.JPG" alt="Dave's Profile Picture" class="mx-auto mb-6 rounded-full profile-glow" style="width: 150px; height: 150px; object-fit: cover;" />
           <h1 class="text-4xl md:text-5xl font-bold mb-6 text-glow">HEFTYSAMMICH</h1>
           <p class="text-lg md:text-xl max-w-xl mx-auto leading-relaxed" style="color: #d1d5db">
             Developer | Privacy Advocate | Building on Hedera | Founder of
