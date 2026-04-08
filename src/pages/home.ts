@@ -12,10 +12,11 @@ interface Link {
 }
 
 const links: Link[] = [
-  { emojiImage: '/images/emojis/splatemoji.png', label: 'Heyproxy Website', url: 'https://www.heyproxy.io/', cyanBorder: true },
-  { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME Website', url: 'https://www.builtbyslime.org/' },
+  { emojiImage: '/images/emojis/splatemoji.png', label: 'Heyproxy', url: 'https://www.heyproxy.io/', cyanBorder: true },
+  { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME dApp', url: 'https://www.builtbyslime.org/' },
   { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME Tools', url: 'https://slime.tools/' },
-  { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME Discord Server', url: 'https://discord.gg/Gus2phUUfP' },
+  { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME Discord', url: 'https://discord.gg/Gus2phUUfP' },
+  { emojiImage: '/images/emojis/splatemoji.png', label: 'SearchIQ', url: 'https://searchiq.app', cyanBorder: true },
   { emojiImage: '/images/emojis/splatemoji.png', label: 'Developer Log', url: '/dev-log' },
   { emojiImage: '/images/emojis/splatemoji.png', label: 'Donate', url: '/donate' },
 ];
