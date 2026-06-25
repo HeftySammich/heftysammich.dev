@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Martian+Mono:wght@100..800&display=swap');
 
 @theme {
   --color-bg-dark: #1a1a1a;
@@ -15,6 +15,10 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Source Code Pro', monospace;
+}
+
+h1 {
+  font-family: 'Martian Mono', monospace;
 }
 
 /* Glass card effect */
