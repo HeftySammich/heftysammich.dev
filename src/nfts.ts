@@ -12,9 +12,18 @@ const collections = [
   { name: 'Cringle', tokenId: '0.0.10190112' },
 ]
 
+const IPFS_PRIMARY = 'https://nftstorage.link/ipfs/'
+const IPFS_FALLBACK = 'https://ipfs.io/ipfs/'
+
 function resolveImage(url: string): string {
   if (!url) return ''
-  if (url.startsWith('ipfs://')) return 'https://ipfs.io/ipfs/' + url.slice(7)
+  if (url.startsWith('ipfs://')) return IPFS_PRIMARY + url.slice(7)
+  return url
+}
+
+function fallbackImage(url: string): string {
+  if (!url) return ''
+  if (url.startsWith('ipfs://')) return IPFS_FALLBACK + url.slice(7)
   return url
 }
 
@@ -63,9 +72,11 @@ async function loadCollection(tokenId: string) {
             <div class="nft-img-wrap">
               <img
                 src="${resolveImage(nft.image)}"
+                data-fallback="${fallbackImage(nft.image)}"
                 alt="${nft.name}"
                 class="nft-img"
                 loading="lazy"
+                onerror="if(!this.dataset.failed){this.dataset.failed='1';this.src=this.dataset.fallback}"
               />
             </div>
             <div class="nft-serial">${nft.name || '#' + nft.serialId}</div>
