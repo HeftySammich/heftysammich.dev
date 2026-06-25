@@ -11,6 +11,7 @@ export default defineConfig({
         'slime-starfall-v': resolve(__dirname, 'slime-starfall-v.html'),
         'slime-hbuds': resolve(__dirname, 'slime-hbuds.html'),
         'slime-wild-tigers': resolve(__dirname, 'slime-wild-tigers.html'),
+        nfts: resolve(__dirname, 'nfts.html'),
       },
     },
   },

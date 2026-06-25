@@ -4,7 +4,8 @@
     { "source": "/donate", "destination": "/donate.html" },
     { "source": "/slime-starfall-v", "destination": "/slime-starfall-v.html" },
     { "source": "/slime-hbuds", "destination": "/slime-hbuds.html" },
-    { "source": "/slime-wild-tigers", "destination": "/slime-wild-tigers.html" }
+    { "source": "/slime-wild-tigers", "destination": "/slime-wild-tigers.html" },
+    { "source": "/nfts", "destination": "/nfts.html" }
   ]
 }
 

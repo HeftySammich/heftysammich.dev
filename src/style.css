@@ -112,3 +112,85 @@ h1 {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   transform: translateY(-2px);
 }
+
+/* NFT Tabs */
+.nft-tab {
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 255, 64, 0.3);
+  background: rgba(255, 255, 255, 0.03);
+  color: #9ca3af;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 0.875rem;
+}
+
+.nft-tab:hover {
+  border-color: rgba(0, 255, 64, 0.5);
+  color: white;
+}
+
+.nft-tab.active {
+  border-color: rgba(0, 255, 64, 0.8);
+  color: #00ff40;
+  background: rgba(0, 255, 64, 0.08);
+}
+
+/* NFT Grid */
+.nft-grid-inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.nft-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(0, 255, 64, 0.15);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.nft-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(0, 255, 64, 0.4);
+}
+
+.nft-img-wrap {
+  aspect-ratio: 1;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.nft-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.nft-serial {
+  padding: 0.4rem 0.5rem;
+  text-align: center;
+  font-size: 0.7rem;
+  color: #9ca3af;
+  font-family: 'Source Code Pro', monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nft-loading {
+  text-align: center;
+  padding: 3rem;
+  color: #9ca3af;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.nft-count {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  font-family: 'Source Code Pro', monospace;
+}
