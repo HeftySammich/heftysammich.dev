@@ -194,3 +194,32 @@ h1 {
   margin-bottom: 1rem;
   font-family: 'Source Code Pro', monospace;
 }
+
+.nft-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.nft-page-btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 255, 64, 0.3);
+  background: rgba(255, 255, 255, 0.03);
+  color: #00ff40;
+  cursor: pointer;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+}
+
+.nft-page-btn:hover:not(:disabled) {
+  border-color: rgba(0, 255, 64, 0.7);
+  background: rgba(0, 255, 64, 0.08);
+}
+
+.nft-page-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
