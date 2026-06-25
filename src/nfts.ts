@@ -78,7 +78,6 @@ function renderPage(nfts: SentxNFT[], page: number, total: number) {
               src="${toImageUrl(nft.image)}"
               alt="${nft.name}"
               class="nft-img"
-              loading="lazy"
               crossorigin="anonymous"
             />
           </div>
