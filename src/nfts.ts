@@ -26,7 +26,7 @@ function toImageUrl(image: string): string {
     const path = image.replace('ipfs://', '')
     const slash = path.lastIndexOf('/')
     const dir = path.substring(0, slash + 1)
-    const file = path.substring(slash + 1).replace(/#/g, '%23')
+    const file = path.substring(slash + 1).replace(/%23/g, '#').replace(/#/g, '%23')
     return IPFS_GATEWAY + dir + file
   }
   return image
