@@ -81,7 +81,7 @@ export function HomePage(): string {
         <!-- Bio Section -->
         <div class="text-center mb-10 mt-12">
           <img src="/images/profile/IMG_6423.PNG" alt="Dave's Profile Picture" class="mx-auto mb-6 rounded-full profile-glow" style="width: 150px; height: 150px; object-fit: cover;" />
-          <h1 class="text-4xl md:text-5xl font-bold mb-6 text-glow">HEFTY</h1>
+          <h1 class="text-4xl md:text-5xl font-bold mb-6 text-glow">HeftySammich</h1>
           <p class="text-lg md:text-xl max-w-xl mx-auto leading-relaxed" style="color: #d1d5db">
             Developer | Privacy Advocate | Building on Hedera | Founder of
             <span class="text-glow" style="color: #00ff40; font-weight: 600;">SLIME</span>
