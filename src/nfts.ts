@@ -5,13 +5,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = NFTsPage()
 
 const API_BASE = 'https://api.sentx.io'
 const API_KEY = import.meta.env.VITE_SENTX_API_KEY
+const IPFS_GATEWAY = import.meta.env.VITE_IPFS_GATEWAY || 'https://ipfs.io/ipfs/'
 const PAGE_SIZE = 50
-
-const GATEWAYS = [
-  'https://dweb.link/ipfs/',
-  'https://w3s.link/ipfs/',
-  'https://ipfs.io/ipfs/',
-]
 
 const collections = [
   { name: 'SLIME', tokenId: '0.0.9474754' },
@@ -19,10 +14,22 @@ const collections = [
   { name: 'Cringle', tokenId: '0.0.10190112' },
 ]
 
-function resolveImage(url: string, gatewayIndex = 0): string {
-  if (!url) return ''
-  if (url.startsWith('ipfs://')) return GATEWAYS[gatewayIndex] + url.slice(7)
-  return url
+function toImageUrl(image: string): string {
+  if (!image) return ''
+  // Private Pinata gateway → rewrite to configured gateway
+  if (image.includes('.mypinata.cloud/ipfs/')) {
+    const cid = image.split('/ipfs/')[1] || ''
+    return IPFS_GATEWAY + cid
+  }
+  // ipfs:// protocol → rewrite to HTTP gateway, encoding # in filenames
+  if (image.startsWith('ipfs://')) {
+    const path = image.replace('ipfs://', '')
+    const slash = path.lastIndexOf('/')
+    const dir = path.substring(0, slash + 1)
+    const file = path.substring(slash + 1).replace(/#/g, '%23')
+    return IPFS_GATEWAY + dir + file
+  }
+  return image
 }
 
 interface SentxNFT {
@@ -68,20 +75,11 @@ function renderPage(nfts: SentxNFT[], page: number, total: number) {
         <div class="nft-card">
           <div class="nft-img-wrap">
             <img
-              src="${resolveImage(nft.image, 0)}"
-              data-raw="${nft.image}"
-              data-gw="0"
+              src="${toImageUrl(nft.image)}"
               alt="${nft.name}"
               class="nft-img"
               loading="lazy"
-              onerror="
-                var next = parseInt(this.dataset.gw) + 1;
-                var gws = ${JSON.stringify(GATEWAYS)};
-                if(next < gws.length && this.dataset.raw.startsWith('ipfs://')) {
-                  this.dataset.gw = next;
-                  this.src = gws[next] + this.dataset.raw.slice(7);
-                }
-              "
+              crossorigin="anonymous"
             />
           </div>
           <div class="nft-serial">${nft.name || '#' + nft.serialId}</div>
