@@ -17,7 +17,7 @@ const links: Link[] = [
   { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME dApp', url: 'https://www.builtbyslime.org/' },
   { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME Tools', url: 'https://slime.tools/' },
   { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME Discord', url: 'https://discord.gg/Gus2phUUfP' },
-  { emojiImage: '/images/emojis/splatemoji.png', label: 'NFT Collections', url: '/nfts' },
+  { emoji: '🖌️', label: 'NFT Collections', url: '/nfts' },
   { emojiImage: '/log.svg', label: 'Developer Log', url: '/dev-log' },
   { emojiImage: '/monero.svg', label: 'Donate', url: '/donate' },
 ];
