@@ -24,7 +24,7 @@ const collectionMeta: Record<string, { description: string; royalty: string }> =
     royalty: '2.5%',
   },
   '0.0.10190112': {
-    description: 'A holiday-themed bounty collection — holders of serials 1–10 were rewarded with prizes from projects across the Hedera ecosystem.',
+    description: 'A holiday-themed bounty collection - holders of serials 1-10 were rewarded with prizes from projects across the Hedera ecosystem.',
     royalty: 'None',
   },
 }
