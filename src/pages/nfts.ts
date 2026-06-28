@@ -13,7 +13,6 @@ export function NFTsPage(): string {
 
         <div class="text-center mb-8 mt-12">
           <h1 class="text-4xl md:text-5xl font-bold mb-2 text-glow">NFT COLLECTIONS</h1>
-          <p style="color: #9ca3af; font-size: 0.875rem;">Built on Hedera Hashgraph</p>
         </div>
 
         <!-- Tabs -->

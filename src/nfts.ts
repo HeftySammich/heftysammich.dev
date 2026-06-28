@@ -14,6 +14,21 @@ const collections = [
   { name: 'Cringle', tokenId: '0.0.10190112' },
 ]
 
+const collectionMeta: Record<string, { description: string; royalty: string }> = {
+  '0.0.9474754': {
+    description: 'The flagship SLIME NFT collection on Hedera — 1,000 unique hand-crafted characters living permanently on the Hashgraph.',
+    royalty: '5%',
+  },
+  '0.0.10050196': {
+    description: 'A Halloween-themed limited edition drop — rare, spooky, and never to be minted again.',
+    royalty: '2.5%',
+  },
+  '0.0.10190112': {
+    description: 'A holiday-themed limited collection where the top 10 holders were rewarded with real prizes.',
+    royalty: 'None',
+  },
+}
+
 function toImageUrl(image: string): string {
   if (!image) return ''
   // Private Pinata gateway → rewrite to configured gateway
@@ -42,6 +57,7 @@ interface SentxNFT {
 const cache: Record<string, SentxNFT[]> = {}
 let currentNFTs: SentxNFT[] = []
 let currentPage = 1
+let currentTokenId = collections[0].tokenId
 
 async function fetchAllNFTs(tokenId: string): Promise<SentxNFT[]> {
   if (cache[tokenId]) return cache[tokenId]
@@ -63,13 +79,38 @@ async function fetchAllNFTs(tokenId: string): Promise<SentxNFT[]> {
   return all
 }
 
-function renderPage(nfts: SentxNFT[], page: number, total: number) {
+function renderCollectionInfo(tokenId: string, count: number): string {
+  const meta = collectionMeta[tokenId]
+  return `
+    <div class="collection-info">
+      <div class="collection-info-item">
+        <span class="collection-info-label">Network</span>
+        <span class="collection-info-value">Hedera</span>
+      </div>
+      <div class="collection-info-item">
+        <span class="collection-info-label">Collection Size</span>
+        <span class="collection-info-value">${count.toLocaleString()} NFTs</span>
+      </div>
+      <div class="collection-info-item">
+        <span class="collection-info-label">Royalty</span>
+        <span class="collection-info-value">${meta.royalty}</span>
+      </div>
+      <div class="collection-info-item collection-info-wide">
+        <span class="collection-info-label">Description</span>
+        <span class="collection-info-value">${meta.description}</span>
+      </div>
+    </div>
+  `
+}
+
+function renderPage(nfts: SentxNFT[], page: number, total: number, tokenId: string) {
   const grid = document.getElementById('nft-grid')!
   const totalPages = Math.ceil(total / PAGE_SIZE)
   const slice = nfts.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE)
 
   grid.innerHTML = `
-    <p class="nft-count">${total} NFTs — Page ${page} of ${totalPages}</p>
+    ${renderCollectionInfo(tokenId, total)}
+    <p class="nft-count">Page ${page} of ${totalPages}</p>
     <div class="nft-grid-inner">
       ${slice.map(nft => `
         <div class="nft-card">
@@ -92,16 +133,17 @@ function renderPage(nfts: SentxNFT[], page: number, total: number) {
   `
 
   document.getElementById('nft-prev')?.addEventListener('click', () => {
-    if (currentPage > 1) { currentPage--; renderPage(currentNFTs, currentPage, currentNFTs.length) }
+    if (currentPage > 1) { currentPage--; renderPage(currentNFTs, currentPage, currentNFTs.length, currentTokenId) }
   })
   document.getElementById('nft-next')?.addEventListener('click', () => {
-    if (currentPage < totalPages) { currentPage++; renderPage(currentNFTs, currentPage, currentNFTs.length) }
+    if (currentPage < totalPages) { currentPage++; renderPage(currentNFTs, currentPage, currentNFTs.length, currentTokenId) }
   })
 }
 
 async function loadCollection(tokenId: string) {
   const grid = document.getElementById('nft-grid')!
   currentPage = 1
+  currentTokenId = tokenId
   grid.innerHTML = '<div class="nft-loading">Loading collection...</div>'
   try {
     currentNFTs = await fetchAllNFTs(tokenId)
@@ -109,7 +151,7 @@ async function loadCollection(tokenId: string) {
       grid.innerHTML = '<div class="nft-loading">No NFTs found.</div>'
       return
     }
-    renderPage(currentNFTs, currentPage, currentNFTs.length)
+    renderPage(currentNFTs, currentPage, currentNFTs.length, tokenId)
   } catch {
     grid.innerHTML = '<div class="nft-loading">Failed to load collection. Please try again.</div>'
   }
