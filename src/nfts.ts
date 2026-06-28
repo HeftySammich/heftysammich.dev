@@ -10,21 +10,21 @@ const PAGE_SIZE = 50
 
 const collections = [
   { name: 'SLIME', tokenId: '0.0.9474754' },
-  { name: 'Brainz', tokenId: '0.0.10050196' },
+  { name: 'BrainZ', tokenId: '0.0.10050196' },
   { name: 'Cringle', tokenId: '0.0.10190112' },
 ]
 
 const collectionMeta: Record<string, { description: string; royalty: string }> = {
   '0.0.9474754': {
-    description: 'The flagship SLIME NFT collection on Hedera — 1,000 unique hand-crafted characters living permanently on the Hashgraph.',
+    description: 'SLIME is my flagship project. Created to fund infrastructure for creators on Hedera.',
     royalty: '5%',
   },
   '0.0.10050196': {
-    description: 'A Halloween-themed limited edition drop — rare, spooky, and never to be minted again.',
+    description: 'A Halloween-themed limited edition drop - rare, spooky, and never to be minted again.',
     royalty: '2.5%',
   },
   '0.0.10190112': {
-    description: 'A holiday-themed limited collection where the top 10 holders were rewarded with real prizes.',
+    description: 'A holiday-themed bounty collection where the top 10 holders were rewarded with real prizes.',
     royalty: 'None',
   },
 }
