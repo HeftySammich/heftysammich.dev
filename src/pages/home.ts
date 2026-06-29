@@ -12,12 +12,12 @@ interface Link {
 }
 
 const links: Link[] = [
-  { emojiImage: '/HP.icon.1.svg', label: 'Heyproxy', url: 'https://www.heyproxy.io/', cyanBorder: true },
-  { emojiImage: '/HP.icon.1.svg', label: 'SearchIQ', url: 'https://searchiq.app', cyanBorder: true },
+  { emojiImage: '/artboard.svg', label: 'NFT Collections', url: '/nfts' },
   { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME dApp', url: 'https://www.builtbyslime.org/' },
   { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME Tools', url: 'https://slime.tools/' },
   { emojiImage: '/images/emojis/splatemoji.png', label: 'SLIME Discord', url: 'https://discord.gg/Gus2phUUfP' },
-  { emojiImage: '/artboard.svg', label: 'NFT Collections', url: '/nfts' },
+  { emojiImage: '/HP.icon.1.svg', label: 'Heyproxy', url: 'https://www.heyproxy.io/', cyanBorder: true },
+  { emojiImage: '/HP.icon.1.svg', label: 'SearchIQ', url: 'https://searchiq.app', cyanBorder: true },
   { emojiImage: '/log.svg', label: 'Developer Log', url: '/dev-log' },
   { emojiImage: '/monero.svg', label: 'Donate', url: '/donate' },
 ];
@@ -84,7 +84,7 @@ export function HomePage(): string {
           <img src="/images/profile/IMG_6423.PNG" alt="Dave's Profile Picture" class="mx-auto mb-6 rounded-full profile-glow" style="width: 150px; height: 150px; object-fit: cover;" />
           <h1 class="text-4xl md:text-5xl font-bold mb-6 text-glow">Heftysammich</h1>
           <p class="text-lg md:text-xl max-w-xl mx-auto leading-relaxed" style="color: #d1d5db">
-            Developer | Privacy Advocate | HBAR | XMR
+            Developer | Privacy Advocate | JPG Junkie
           </p>
         </div>
 
