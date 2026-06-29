@@ -8,9 +8,38 @@ interface BlogPost {
   excerpt: string;
   slug: string;
   logo: string;
+  logoBg?: string;
 }
 
 const posts: BlogPost[] = [
+  {
+    title: 'Goodebags Games',
+    author: 'HEFTYSAMMICH',
+    date: 'JUN 2026',
+    tag: 'GAMING',
+    excerpt: 'Coming soon - stay tuned.',
+    slug: 'goodebags-games',
+    logo: '/images/projects/Goodebags.jpg'
+  },
+  {
+    title: 'SearchIQ',
+    author: 'HEFTYSAMMICH',
+    date: 'MAY 2026',
+    tag: 'PRIVACY',
+    excerpt: 'Coming soon - stay tuned.',
+    slug: 'searchiq',
+    logo: '/HP.icon.1.svg',
+    logoBg: '#000000'
+  },
+  {
+    title: 'Hedera Creator Kit (SLIME Tools)',
+    author: 'HEFTYSAMMICH',
+    date: 'FEB 2026',
+    tag: 'HEDERA',
+    excerpt: 'Coming soon - stay tuned.',
+    slug: 'hedera-creator-kit',
+    logo: '/images/projects/SLIMEGraphic.png'
+  },
   {
     title: 'SLIME + Starfall V',
     author: 'HEFTYSAMMICH',
@@ -50,7 +79,7 @@ function BlogPostCard(post: BlogPost): string {
           <img src="${post.logo}"
                alt="${post.title}"
                class="w-32 h-32 rounded-full object-cover"
-               style="border: 3px solid rgba(0, 255, 64, 0.3); box-shadow: 0 0 30px rgba(0, 255, 64, 0.2);">
+               style="border: 3px solid rgba(0, 255, 64, 0.3); box-shadow: 0 0 30px rgba(0, 255, 64, 0.2);${post.logoBg ? ` background-color: ${post.logoBg};` : ''}">
         </div>
 
         <!-- Content -->
