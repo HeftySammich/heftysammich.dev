@@ -20,7 +20,7 @@ const collectionMeta: Record<string, { description: string; royalty: string }> =
     royalty: '5%',
   },
   '0.0.10050196': {
-    description: 'A Halloween-themed limited edition drop - rare, spooky, and never to be minted again.',
+    description: 'A zombie-themed limited edition drop - rare, spooky, and never to be minted again.',
     royalty: '2.5%',
   },
   '0.0.10190112': {
