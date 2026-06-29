@@ -78,7 +78,7 @@ function BlogPostCard(post: BlogPost): string {
         <div class="flex-shrink-0">
           <img src="${post.logo}"
                alt="${post.title}"
-               class="w-32 h-32 rounded-full object-cover"
+               class="w-32 h-32 rounded-full ${post.logoBg ? 'object-contain p-3' : 'object-cover'}"
                style="border: 3px solid rgba(0, 255, 64, 0.3); box-shadow: 0 0 30px rgba(0, 255, 64, 0.2);${post.logoBg ? ` background-color: ${post.logoBg};` : ''}">
         </div>
 
