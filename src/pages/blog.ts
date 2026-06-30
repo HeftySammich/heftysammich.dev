@@ -16,8 +16,8 @@ const posts: BlogPost[] = [
     title: 'Goodebags Games',
     author: 'HEFTYSAMMICH',
     date: 'JUN 2026',
-    tag: 'GAMING',
-    excerpt: 'Coming soon - stay tuned.',
+    tag: 'HEDERA + XRPL',
+    excerpt: 'Goodebags reached out with a vision that instantly clicked: take his fun, family-friendly physical card game and bring it fully on-chain as a web experience. I built the complete digital version from the ground up at goodebags.xyz - dual-chain, token-gated, and ready to play.',
     slug: 'goodebags-games',
     logo: '/images/projects/Goodebags.jpg'
   },
@@ -43,7 +43,7 @@ const posts: BlogPost[] = [
   {
     title: 'SLIME + Starfall V',
     author: 'HEFTYSAMMICH',
-    date: 'OCT 31, 2025',
+    date: 'OCT 2025',
     tag: 'HEDERA',
     excerpt: 'Two months ago, Silent Architect—founder of Starfall V—reached out with an exciting proposal: partner up for the Hedera Hackathon to build an infinite runner game from scratch. We agreed on a 50/50 split for any prize winnings and dove right in.',
     slug: 'slime-starfall-v',
@@ -52,7 +52,7 @@ const posts: BlogPost[] = [
   {
     title: 'SLIME + ħBUDS',
     author: 'HEFTYSAMMICH',
-    date: 'SEPT 1, 2025',
+    date: 'SEPT 2025',
     tag: 'HEDERA',
     excerpt: 'NoGrave, founder of ħBUDS, had already launched ScribbleXRB - a sleek, minimal note-taking app live on iOS and Android with a growing user base. After diving into the Hedera ecosystem, he saw the perfect upgrade: store notes immutably on the Hedera File Service (HFS).',
     slug: 'slime-hbuds',
@@ -61,7 +61,7 @@ const posts: BlogPost[] = [
   {
     title: 'SLIME + Wild Tigers',
     author: 'HEFTYSAMMICH',
-    date: 'JUL 15, 2025',
+    date: 'JUL 2025',
     tag: 'HEDERA',
     excerpt: 'Mauii - core builder behind Wild Tigers - was one of my first friends in the Hedera community. After months of vibing in the Wild Tigers Discord, he opened up about Wild Tigers World, the central dApp hub for the ecosystem.',
     slug: 'slime-wild-tigers',

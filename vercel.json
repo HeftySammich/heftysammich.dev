@@ -7,7 +7,8 @@
     { "source": "/slime-wild-tigers", "destination": "/slime-wild-tigers.html" },
     { "source": "/nfts", "destination": "/nfts.html" },
     { "source": "/hedera-creator-kit", "destination": "/hedera-creator-kit.html" },
-    { "source": "/searchiq", "destination": "/searchiq.html" }
+    { "source": "/searchiq", "destination": "/searchiq.html" },
+    { "source": "/goodebags-games", "destination": "/goodebags-games.html" }
   ]
 }
 

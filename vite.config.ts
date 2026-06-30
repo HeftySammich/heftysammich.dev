@@ -14,6 +14,7 @@ export default defineConfig({
         nfts: resolve(__dirname, 'nfts.html'),
         'hedera-creator-kit': resolve(__dirname, 'hedera-creator-kit.html'),
         searchiq: resolve(__dirname, 'searchiq.html'),
+        'goodebags-games': resolve(__dirname, 'goodebags-games.html'),
       },
     },
   },
