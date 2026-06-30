@@ -25,7 +25,7 @@ const posts: BlogPost[] = [
     title: 'SearchIQ',
     author: 'HEFTYSAMMICH',
     date: 'APR 2026',
-    tag: 'SECURITY',
+    tag: 'SAAS',
     excerpt: 'Every vibe-coder I know eventually hits the same wall: you ship fast, the product feels incredible, but you\'re stressed about security holes and SEO misses. I built SearchIQ to fix that exact pain - professional-grade audits and smart generators, built for vibe-coders by a tenured developer.',
     slug: 'searchiq',
     logo: '/HP.icon.1.svg',
