@@ -34,7 +34,7 @@ const posts: BlogPost[] = [
   {
     title: 'Hedera Creator Kit (SLIME Tools)',
     author: 'HEFTYSAMMICH',
-    date: 'JUN 2026',
+    date: 'FEB 2026',
     tag: 'HEDERA',
     excerpt: 'After seeing too many creators get wrecked by fragmented tools and expensive platforms on Hedera, I built the all-in-one solution I always wished existed. Enter the Hedera Creator Kit - the official SLIME Tools platform. No fees, no gatekeeping, just raw Hedera.',
     slug: 'hedera-creator-kit',
