@@ -44,7 +44,7 @@ export function StarfallVPost(): string {
               </p>
 
               <p style="margin-bottom: 1.5rem;">
-                Silent took the reins as lead developer, crafting the core gameplay mechanics, UI, custom sprites, and the primary codebase. I handled DevOps duties—including repo management, server setup on Railway (keeping costs under $5/mo), and all Hedera integrations like wallet connectivity, token association flows, NFT-based character unlocking, and treasury-driven reward distribution.
+                Silent took the reins as lead developer, crafting the core gameplay mechanics, UI, custom sprites, and the primary codebase. I handled DevOps duties - including repo management, server setup on Railway (keeping costs under $5/mo), and all Hedera integrations like wallet connectivity, token association flows, NFT-based character unlocking, and treasury-driven reward distribution.
               </p>
 
               <p style="margin-bottom: 1.5rem;">
@@ -57,6 +57,10 @@ export function StarfallVPost(): string {
 
               <p style="margin-bottom: 1.5rem;">
                 <strong>Long-term goal:</strong> use the game as an onboarding powerhouse to bring 500 new users into the Hedera ecosystem by end of 2027.
+              </p>
+
+              <p style="margin-bottom: 0; font-weight: 700; color: #00ff40;">
+                Run hard. Earn on Hedera. SLIME ships.
               </p>
 
             </div>

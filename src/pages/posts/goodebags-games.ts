@@ -40,7 +40,7 @@ export function GoodebaagsGamesPost(): string {
               </p>
 
               <p style="margin-bottom: 1.5rem;">
-                Goodebags reached out with a vision that instantly clicked: take his fun, family-friendly physical card game and bring it fully on-chain as a web experience. He already had two successful NFT collections - The Bees Knees on Hedera and Ape Mod X on XRPL - with each NFT representing a real playable card from the physical decks.
+                Goodebags reached out with a vision that instantly clicked: take his fun, family-friendly physical card game and bring it fully on-network as a web experience. He already had two successful NFT collections - The Bees Knees on Hedera and Ape Mod X on XRPL - with each NFT representing a real playable card from the physical decks.
               </p>
 
               <p style="margin-bottom: 1.5rem;">
@@ -55,7 +55,7 @@ export function GoodebaagsGamesPost(): string {
 
               <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem; list-style: disc;">
                 <li style="margin-bottom: 0.5rem;">Full token-gated access using NFTs from either (or both) Hedera and XRPL collections</li>
-                <li style="margin-bottom: 0.5rem;">Dual-chain wallet support: Wallet Connect (Hedera) + Xaman Connect (XRPL)</li>
+                <li style="margin-bottom: 0.5rem;">Dual-network wallet support: Wallet Connect (Hedera) + Xaman Connect (XRPL)</li>
                 <li style="margin-bottom: 0.5rem;">Play against 1-4 AI opponents with smart, automated gameplay</li>
                 <li style="margin-bottom: 0.5rem;">Player-controlled trait selection with smooth animations and card mechanics</li>
                 <li style="margin-bottom: 0.5rem;">Live global leaderboard tracking wins and points</li>
@@ -67,7 +67,7 @@ export function GoodebaagsGamesPost(): string {
               </p>
 
               <p style="margin-bottom: 1.5rem;">
-                Result? Goodebags Games is now live and successfully bridging physical card gaming with blockchain. Players can collect on Hedera or XRPL, connect their wallets, and jump straight into competitive play. The dual-chain approach creates one interconnected universe across both networks.
+                Result? Goodebags Games is now live and successfully bridging physical card gaming across distributed networks. Players can collect on Hedera or XRPL, connect their wallets, and jump straight into competitive play. The dual-network approach creates one interconnected universe across both networks.
               </p>
 
               <p style="margin-bottom: 1.5rem;">
@@ -75,7 +75,7 @@ export function GoodebaagsGamesPost(): string {
               </p>
 
               <p style="margin-bottom: 1.5rem;">
-                From kitchen-table card battles to on-chain leaderboard wars - Goodebags Games just leveled up.
+                From kitchen-table card battles to on-ledger leaderboard wars - Goodebags Games just leveled up.
               </p>
 
               <p style="margin-bottom: 0; font-weight: 700; color: #00ff40;">

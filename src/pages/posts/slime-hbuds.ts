@@ -55,7 +55,7 @@ export function HbudsPost(): string {
               </p>
 
               <p style="margin-bottom: 1.5rem;">
-                The integration is live, lean, and lightning-fast—HFS transactions cost fractions of a cent, and everything stays on-chain forever.
+                The integration is live, lean, and lightning-fast - HFS transactions cost fractions of a cent, and everything stays on-chain forever.
               </p>
 
               <p style="margin-bottom: 1.5rem;">
@@ -64,8 +64,8 @@ export function HbudsPost(): string {
                 Push updated native apps to App Store & Google Play with full Hedera branding and onboarding flows.
               </p>
 
-              <p style="margin-bottom: 1.5rem;">
-                Privacy-first notes, powered by Hedera—on your phone, in your control.
+              <p style="margin-bottom: 0; font-weight: 700; color: #00ff40;">
+                Privacy-first notes, powered by Hedera - on your phone, in your control.
               </p>
 
             </div>

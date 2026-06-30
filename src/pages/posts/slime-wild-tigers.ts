@@ -40,7 +40,7 @@ export function WildTigersPost(): string {
               </p>
 
               <p style="margin-bottom: 1.5rem;">
-                Mauii - the founder and builder behind Wild Tigers - was one of my first connections in Hedera. After months of vibing in the Wild Tigers Discord, he told me about Wild Tigers World, the central hub for their ecosystem: custom user profiles, SentX marketplace integration, Wallet Connect, and a custom PAWS token marketplace—all wrapped in a sharp React frontend.
+                Mauii - the founder and builder behind Wild Tigers - was one of my first connections in Hedera. After months of vibing in the Wild Tigers Discord, he told me about Wild Tigers World, the central hub for their ecosystem: custom user profiles, SentX marketplace integration, Wallet Connect, and a custom PAWS token marketplace - all wrapped in a sharp React frontend.
               </p>
 
               <p style="margin-bottom: 1.5rem;">
@@ -75,8 +75,8 @@ export function WildTigersPost(): string {
                 Ongoing partnership. New features dropping quarterly: leaderboards, staking v2, cross-game PAWS utility, and mobile PWA support.
               </p>
 
-              <p style="margin-bottom: 1.5rem;">
-                From Replit chaos to Hedera-grade polish—SLIME strikes again.
+              <p style="margin-bottom: 0; font-weight: 700; color: #00ff40;">
+                From Replit chaos to Hedera-grade polish - SLIME strikes again.
               </p>
 
             </div>

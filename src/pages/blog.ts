@@ -17,7 +17,7 @@ const posts: BlogPost[] = [
     author: 'HEFTYSAMMICH',
     date: 'JUN 2026',
     tag: 'HEDERA + XRPL',
-    excerpt: 'Goodebags reached out with a vision that instantly clicked: take his fun, family-friendly physical card game and bring it fully on-chain as a web experience. I built the complete digital version from the ground up at goodebags.xyz - dual-chain, token-gated, and ready to play.',
+    excerpt: 'Goodebags reached out with a vision that instantly clicked: take his fun, family-friendly physical card game and bring it fully on-network as a web experience. I built the complete digital version from the ground up at goodebags.xyz - dual-network, token-gated, and ready to play.',
     slug: 'goodebags-games',
     logo: '/images/projects/Goodebags.jpg'
   },
