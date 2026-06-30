@@ -23,7 +23,7 @@ export function SearchIQPost(): string {
                   <span>•</span>
                   <span style="color: white; font-medium">APR 2026</span>
                   <span>•</span>
-                  <span class="text-glow" style="color: #00ffff; font-weight: 600;">PRIVACY</span>
+                  <span class="text-glow" style="color: #00ffff; font-weight: 600;">SECURITY</span>
                 </div>
               </div>
             </div>
