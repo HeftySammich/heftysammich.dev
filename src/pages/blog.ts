@@ -34,9 +34,9 @@ const posts: BlogPost[] = [
   {
     title: 'Hedera Creator Kit (SLIME Tools)',
     author: 'HEFTYSAMMICH',
-    date: 'FEB 2026',
+    date: 'JUN 2026',
     tag: 'HEDERA',
-    excerpt: 'Coming soon - stay tuned.',
+    excerpt: 'After seeing too many creators get wrecked by fragmented tools, expensive platforms, and clunky UX on Hedera, I decided it was time to build the all-in-one solution I always wished existed. Enter the Hedera Creator Kit - the official SLIME Tools platform. No platform fees. No gatekeeping. The only requirement to unlock the full suite is holding a SLIME NFT. Everything runs natively on Hedera using official HIPs, keeping it fast, cheap, and truly decentralized. Built by a creator, for creators - solving the fragmentation problem that\'s held Hedera back for too long.',
     slug: 'hedera-creator-kit',
     logo: '/images/projects/SLIMEGraphic.png'
   },
