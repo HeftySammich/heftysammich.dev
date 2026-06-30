@@ -24,9 +24,9 @@ const posts: BlogPost[] = [
   {
     title: 'SearchIQ',
     author: 'HEFTYSAMMICH',
-    date: 'MAY 2026',
+    date: 'APR 2026',
     tag: 'PRIVACY',
-    excerpt: 'Coming soon - stay tuned.',
+    excerpt: 'Every vibe-coder I know eventually hits the same wall: you ship fast, the product feels incredible, but you\'re stressed about security holes and SEO misses. I built SearchIQ to fix that exact pain - professional-grade audits and smart generators, built for vibe-coders by a vibe-coder.',
     slug: 'searchiq',
     logo: '/HP.icon.1.svg',
     logoBg: '#000000'
@@ -78,7 +78,7 @@ function BlogPostCard(post: BlogPost): string {
         <div class="flex-shrink-0">
           <img src="${post.logo}"
                alt="${post.title}"
-               class="w-32 h-32 rounded-full ${post.logoBg ? 'object-contain p-3' : 'object-cover'}"
+               class="w-32 h-32 rounded-full ${post.logoBg ? 'object-contain p-5' : 'object-cover'}"
                style="border: 3px solid rgba(0, 255, 64, 0.3); box-shadow: 0 0 30px rgba(0, 255, 64, 0.2);${post.logoBg ? ` background-color: ${post.logoBg};` : ''}">
         </div>
 

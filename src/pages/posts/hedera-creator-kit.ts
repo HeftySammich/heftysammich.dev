@@ -21,7 +21,7 @@ export function HederaCreatorKitPost(): string {
                 <div class="flex flex-wrap gap-4 text-sm" style="color: #9ca3af">
                   <span style="color: white; font-medium">HEFTYSAMMICH</span>
                   <span>•</span>
-                  <span style="color: white; font-medium">JUN 2026</span>
+                  <span style="color: white; font-medium">FEB 2026</span>
                   <span>•</span>
                   <span class="text-glow" style="color: #00ff40; font-weight: 600;">HEDERA</span>
                 </div>
@@ -34,7 +34,7 @@ export function HederaCreatorKitPost(): string {
             <div class="prose prose-invert prose-lg max-w-none" style="color: #d1d5db">
 
               <p style="margin-bottom: 1.5rem;">
-                <strong>Date:</strong> June 2026<br>
+                <strong>Date:</strong> February 2026<br>
                 <strong>Project:</strong> Hedera Creator Kit (SLIME Tools)<br>
                 <strong>Partners:</strong> SLIME Ecosystem (HeftySammich)
               </p>

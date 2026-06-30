@@ -13,6 +13,7 @@ export default defineConfig({
         'slime-wild-tigers': resolve(__dirname, 'slime-wild-tigers.html'),
         nfts: resolve(__dirname, 'nfts.html'),
         'hedera-creator-kit': resolve(__dirname, 'hedera-creator-kit.html'),
+        searchiq: resolve(__dirname, 'searchiq.html'),
       },
     },
   },
