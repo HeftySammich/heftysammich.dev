@@ -65,7 +65,7 @@ export function HbudsPost(): string {
               </p>
 
               <p style="margin-bottom: 0; font-weight: 700; color: #00ff40;">
-                Privacy-first notes, powered by Hedera - on your phone, in your control.
+                Privacy-first notes, powered by Hedera.
               </p>
 
             </div>

@@ -60,7 +60,7 @@ export function StarfallVPost(): string {
               </p>
 
               <p style="margin-bottom: 0; font-weight: 700; color: #00ff40;">
-                Run hard. Earn on Hedera. SLIME ships.
+                Run hard. Earn on Hedera.
               </p>
 
             </div>

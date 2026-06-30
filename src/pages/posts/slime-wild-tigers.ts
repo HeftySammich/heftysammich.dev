@@ -76,7 +76,7 @@ export function WildTigersPost(): string {
               </p>
 
               <p style="margin-bottom: 0; font-weight: 700; color: #00ff40;">
-                From Replit chaos to Hedera-grade polish - SLIME strikes again.
+                From Replit chaos to Hedera-grade polish.
               </p>
 
             </div>
