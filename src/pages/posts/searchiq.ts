@@ -44,7 +44,7 @@ export function SearchIQPost(): string {
               </p>
 
               <p style="margin-bottom: 1.5rem;">
-                SearchIQ.app is a focused SaaS built for vibe-coders by a vibe-coder. It gives you professional-grade audits and smart generators without the enterprise price tag or bloated agency process.
+                SearchIQ.app is a focused SaaS built for vibe-coders by a tenured developer. It gives you professional-grade audits and smart generators without the enterprise price tag or bloated agency process.
               </p>
 
               <p style="margin-bottom: 1rem;">Four core tools:</p>
