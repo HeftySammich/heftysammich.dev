@@ -41,7 +41,7 @@ const posts: BlogPost[] = [
     logo: '/images/projects/SLIMEGraphic.png'
   },
   {
-    title: 'SLIME + Starfall V',
+    title: 'Starfall V',
     author: 'HEFTYSAMMICH',
     date: 'OCT 2025',
     tag: 'HEDERA',
@@ -50,7 +50,7 @@ const posts: BlogPost[] = [
     logo: '/images/projects/Starfall.jpg'
   },
   {
-    title: 'SLIME + ħBUDS',
+    title: 'ħBUDS',
     author: 'HEFTYSAMMICH',
     date: 'SEPT 2025',
     tag: 'HEDERA',
@@ -59,7 +59,7 @@ const posts: BlogPost[] = [
     logo: '/images/projects/buds.jpg'
   },
   {
-    title: 'SLIME + Wild Tigers',
+    title: 'Wild Tigers',
     author: 'HEFTYSAMMICH',
     date: 'JUL 2025',
     tag: 'HEDERA',

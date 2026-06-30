@@ -16,7 +16,7 @@ export function StarfallVPost(): string {
                    style="border: 3px solid rgba(0, 255, 64, 0.3); box-shadow: 0 0 30px rgba(0, 255, 64, 0.2);">
               <div>
                 <h1 class="text-4xl md:text-5xl font-bold mb-2" style="font-family: system-ui, -apple-system, sans-serif; color: white;">
-                  SLIME + Starfall V
+                  Starfall V
                 </h1>
                 <div class="flex flex-wrap gap-4 text-sm" style="color: #9ca3af">
                   <span style="color: white; font-medium">HEFTYSAMMICH</span>
