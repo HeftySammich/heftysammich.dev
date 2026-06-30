@@ -12,6 +12,7 @@ export default defineConfig({
         'slime-hbuds': resolve(__dirname, 'slime-hbuds.html'),
         'slime-wild-tigers': resolve(__dirname, 'slime-wild-tigers.html'),
         nfts: resolve(__dirname, 'nfts.html'),
+        'hedera-creator-kit': resolve(__dirname, 'hedera-creator-kit.html'),
       },
     },
   },

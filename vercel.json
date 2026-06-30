@@ -5,7 +5,8 @@
     { "source": "/slime-starfall-v", "destination": "/slime-starfall-v.html" },
     { "source": "/slime-hbuds", "destination": "/slime-hbuds.html" },
     { "source": "/slime-wild-tigers", "destination": "/slime-wild-tigers.html" },
-    { "source": "/nfts", "destination": "/nfts.html" }
+    { "source": "/nfts", "destination": "/nfts.html" },
+    { "source": "/hedera-creator-kit", "destination": "/hedera-creator-kit.html" }
   ]
 }
 
